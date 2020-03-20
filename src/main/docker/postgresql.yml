@@ -1,0 +1,11 @@
+version: '2'
+services:
+  testcommerce-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/testcommerce/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=testcommerce
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
